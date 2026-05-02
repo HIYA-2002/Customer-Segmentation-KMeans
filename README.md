@@ -1,55 +1,243 @@
-# 🛍️ Customer Segmentation using K-Means Clustering
+🛍️ Customer Segmentation using K-Means Clustering
+📌 Project Overview
+This project applies K-Means Clustering to segment customers based on their purchasing behavior. The goal is to identify distinct customer groups and enable targeted marketing strategies.
 
-## 📌 Overview
-This project applies K-Means clustering to segment customers based on purchasing behavior for targeted marketing strategies.
+🎯 Business Objective
 
----
 
-## 🎯 Objectives
-- Identify distinct customer groups
-- Understand spending behavior
-- Enable data-driven marketing decisions
+Understand customer purchasing patterns
 
----
 
-## 📊 Dataset
-- Mall Customers Dataset
-- Features: Age, Annual Income, Spending Score
+Identify high-value and low-value customer segments
 
----
 
-## ⚙️ Tech Stack
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
+Enable data-driven decision-making for marketing
 
----
 
-## 🔍 Key Steps
-1. Data Cleaning
-2. Exploratory Data Analysis (EDA)
+
+📊 Dataset Information
+
+
+Dataset: Mall Customers Dataset
+
+
+Features Used:
+
+
+Age
+
+
+Annual Income (k$)
+
+
+Spending Score (1–100)
+
+
+
+
+
+🔍 Exploratory Data Analysis (EDA)
+
+
+Analyzed distributions of Age, Income, and Spending Score
+
+
+Identified spending behavior trends across different age groups
+
+
+Observed natural grouping patterns in Income vs Spending Score
+
+
+Key Observations:
+
+
+Younger customers tend to spend more
+
+
+Income is not strongly correlated with spending
+
+
+Clear segmentation patterns visible before modeling
+
+
+
+⚙️ Methodology
+1. Data Preprocessing
+
+
+Removed irrelevant feature (CustomerID)
+
+
+Checked for missing values (none found)
+
+
+2. Feature Selection
+
+
+Selected:
+
+
+Annual Income
+
+
+Spending Score
+
+
+
+
 3. Feature Scaling
-4. Elbow Method
-5. K-Means Clustering
-6. Cluster Interpretation
 
----
 
-## 📈 Results
-- Identified 5 customer segments
-- Silhouette Score: 0.55
-- Clear separation between clusters
+Applied StandardScaler to normalize data
 
----
 
-## 💡 Business Insights
-- Premium customers identified for retention
-- High-income low-spending customers as potential targets
-- Low-value customers for cost optimization
+Ensured equal contribution of all features
 
----
 
-## 🚀 Future Work
-- Include more features
-- Try advanced clustering algorithms (DBSCAN, Hierarchical Clustering)
+4. Finding Optimal Clusters
+
+
+Used Elbow Method
+
+
+Selected K = 5 based on inertia curve
+
+
+5. Model Building
+
+
+Applied K-Means Clustering
+
+
+Assigned cluster labels to each customer
+
+
+
+📈 Model Evaluation
+Silhouette Score
+
+
+Score: 0.55
+
+
+Indicates reasonably well-separated and meaningful clusters
+
+
+
+🧠 Customer Segments Identified
+
+
+Premium Customers
+
+
+High Income, High Spending
+
+
+Most valuable segment
+
+
+
+
+Potential Customers
+
+
+High Income, Low Spending
+
+
+Untapped opportunity
+
+
+
+
+Impulsive Customers
+
+
+Low Income, High Spending
+
+
+High engagement but risky
+
+
+
+
+Low-Value Customers
+
+
+Low Income, Low Spending
+
+
+Least profitable
+
+
+
+
+Average Customers
+
+
+Moderate Income & Spending
+
+
+Stable segment
+
+
+
+
+
+💡 Business Recommendations
+
+
+🎯 Focus on Premium Customers with loyalty programs
+
+
+📢 Target High-Income Low-Spenders with personalized marketing
+
+
+💸 Manage Impulsive Customers with budget-friendly offers
+
+
+⚡ Reduce spend on Low-Value Customers
+
+
+🔄 Upsell Average Customers to higher-value segments
+
+
+
+🚀 Key Insight
+
+Not all high-income customers are high spenders, highlighting the importance of behavior-based segmentation over assumptions.
+
+
+🛠️ Tech Stack
+
+
+Python
+
+
+Pandas, NumPy
+
+
+Matplotlib, Seaborn
+
+
+Scikit-learn
+
+
+
+📁 Project Structure
+Customer-Segmentation/│├── Customer_Segmentation_KMeans_Project.ipynb├── Mall_Customers.csv├── README.md└── images/
+
+🔮 Future Improvements
+
+
+Include additional behavioral features
+
+
+Try advanced clustering (DBSCAN, Hierarchical)
+
+
+Deploy as an interactive dashboard (Streamlit)
+
+
+
+📌 Conclusion
+This project demonstrates how unsupervised learning can uncover hidden customer patterns and support data-driven marketing strategies.
