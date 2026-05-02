@@ -115,3 +115,15 @@ Customer-Segmentation-KMeans/
 ├── Customer_Segmentation_KMeans_Project.ipynb
 ├── Mall_Customers.csv
 ├── README.md
+
+---
+
+## 🔮 Future Improvements
+- Include more features  
+- Try advanced clustering algorithms (DBSCAN, Hierarchical)  
+- Deploy using Streamlit  
+
+---
+
+## 📌 Conclusion
+This project demonstrates how unsupervised learning can uncover hidden customer patterns and support data-driven marketing strategies.
